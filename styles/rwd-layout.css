@@ -35,40 +35,40 @@ div[class*="group"]{
   }
 }
 
-.group1{
+.group1 .box{
   background-color: gold;
 }
-.group2{
+.group2 .box{
   background-color: pink;
 }
-.group3{
+.group3 .box{
   background-color: skyblue;
 }
-.group4{
+.group4 .box{
   background-color: salmon;
 }
-.group5{
+.group5 .box{
   background-color: violet;
 }
-.group6{
+.group6 .box{
   background-color: aquamarine;
 }
-.group7{
+.group7 .box{
   background-color: tomato;
 }
-.group8{
+.group8 .box{
   background-color:darkgreen;
 }
-.group9{
+.group9 .box{
   background-color:cornflowerblue;
 }
-.group10{
+.group10 .box{
   background-color: midnightblue;
 }
-.group11{
+.group11 .box{
   background-color: olive;
 }
-.group12{
+.group12 .box{
   background-color:sandybrown;
 }
 
