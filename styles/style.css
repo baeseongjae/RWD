@@ -105,22 +105,31 @@ input[type="search"] {
 
   /* 모바일 메뉴 제어 버튼 시작 */
   .buttonWrapper {
-    background: gold;
+    padding: var(--spacing-xxs);
     overflow: hidden;
+    position: absolute;
+    top: 3.75rem;
+    right: var(--spacing-lg);
+    transform: translate(-0.25rem, -0.25rem);
   }
 
   .button--burger {
-    width: 30px;
-    height: 30px;
-    background: blue;
     /* display: flex;
     flex-flow: column nowrap;
     justify-content: space-between; */
     position: relative;
+    width: 2rem;
+    height: 2rem;
   }
 
-  [class*=".button--burgerBar"] {
-    background: var(--white);
+  .button--burger:focus {
+    outline-offset: 2px;
+  }
+
+  .button--burgerBarTop,
+  .button--burgerBarMiddle,
+  .button--burgerBarBottom{
+    background-color: var(--white);
     width: 100%;
     height: 20%;
     border-radius: 10px;
@@ -143,14 +152,14 @@ input[type="search"] {
 
   .is--active .button--burgerBarTop {
     top: 50%;
-    transform: translate(0%, -50%) rotate(-45deg);
+    transform: translate(0%, -50%) rotate(45deg);
   }
   .is--active .button--burgerBarMiddle {
-    transform: translate(-100%, -50%);
+    transform: translate(-150%, -50%);
   }
   .is--active .button--burgerBarBottom {
     top: 50%;
-    transform: translate(0%, -50%) rotate(45deg);
+    transform: translate(0%, -50%) rotate(-45deg);
   }
 
 
@@ -189,6 +198,29 @@ input[type="search"] {
     display: none;
   }
 
+    /* 데스크탑 메인 메뉴 */
+  .menu{
+    background-color: var(--secondary-color);
+    padding: var(--spacing-base) var(--spacing-lg);
+  }
+  .menu__list{
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu__link{
+    display: block;
+    padding: var(--spacing-base) var(--spacing-lg); 
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
+  }
 
 
 }
