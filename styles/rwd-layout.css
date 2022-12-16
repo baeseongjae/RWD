@@ -1,0 +1,74 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+.container {
+  background: silver;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 12px;
+}
+
+div[class*="group"]{
+  width: 100%;
+  height: 50px;
+  margin: 12px 0;
+  padding: 0 12px;
+}
+
+@media (min-width: 768px){
+  div[class*="group"]{
+    width: 50%;
+    height: 100px;
+  }
+}
+
+@media (min-width: 1280px){
+  div[class*="group"]{
+    width: 25%;
+    height: 200px;
+  }
+}
+
+.group1{
+  background-color: gold;
+}
+.group2{
+  background-color: pink;
+}
+.group3{
+  background-color: skyblue;
+}
+.group4{
+  background-color: salmon;
+}
+.group5{
+  background-color: violet;
+}
+.group6{
+  background-color: aquamarine;
+}
+.group7{
+  background-color: tomato;
+}
+.group8{
+  background-color:darkgreen;
+}
+.group9{
+  background-color:cornflowerblue;
+}
+.group10{
+  background-color: midnightblue;
+}
+.group11{
+  background-color: olive;
+}
+.group12{
+  background-color:sandybrown;
+}
+
