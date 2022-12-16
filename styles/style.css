@@ -198,7 +198,8 @@ input[type="search"] {
     display: none;
   }
 
-    /* 데스크탑 메인 메뉴 */
+  
+  /* 데스크탑 메인 메뉴 */
   .menu{
     background-color: var(--secondary-color);
     padding: var(--spacing-base) var(--spacing-lg);
@@ -221,8 +222,6 @@ input[type="search"] {
     font-size: 1.2rem;
     text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
   }
-
-
 }
 
 /* 고해상도 배경이미지 미디어쿼리 */
