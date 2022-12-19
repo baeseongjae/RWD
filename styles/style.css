@@ -99,6 +99,29 @@ input[type="search"] {
   padding: var(--spacing-base) var(--spacing-lg);
 }
 
+/* 공통 메인 콘텐츠 섹션 제목 */
+[class*="__title"]{
+  margin-bottom: var(--spacing-base);
+  /* display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 30px;
+}
+
+[class*="__koTitle"]{
+  font-size: var(--text-md);
+  font-weight: 700;
+  background-color: brown;
+  align-self: end;
+}
+
+[class*="__enTitle"]{
+  background-color: purple;
+}
+
+
 /* 공통 추천 서적 */
 .book {
   background: lightgreen;
