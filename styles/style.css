@@ -121,6 +121,12 @@ input[type="search"] {
   background-color: purple;
 }
 
+.sprite{
+  color: white;
+  background: blue url("./../images/sprite_main.png") no-repeat;
+  height: 3.75rem;
+  padding-left: 4rem;
+}
 
 /* 공통 추천 서적 */
 .book {
