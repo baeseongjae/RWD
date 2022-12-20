@@ -169,10 +169,13 @@ input[type="search"] {
   /* position: relative; */
   display: flex;
   flex-flow: row wrap;
+  overflow: hidden;
+  background-color: green;
 }
 
 .board__title{
   flex: 1 1 auto;
+  background-color: purple;
 }
 
 .board__list{
@@ -181,19 +184,30 @@ input[type="search"] {
   flex-flow: column nowrap;
   flex: 1 1 auto;
   gap: var(--spacing-sm);
+  width: 100%;
+  background-color: gray;
 }
 
 .board__item{
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  background-color: aqua;
 }
 
 .board__link{
+  flex: 0 1 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: orange;
+  width: calc(100% - 5.375rem);
 }
 
 .board__date{
   flex: 0 0 auto;
+  background-color: blue;
+  width: 5.375rem;
 }
 
 .board__more{
