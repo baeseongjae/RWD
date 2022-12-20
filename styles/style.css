@@ -165,9 +165,44 @@ input[type="search"] {
 
 /* 공통 게시판 */
 .board {
-  /* background: lightsalmon; */
   grid-area: board;
+  /* position: relative; */
+  display: flex;
+  flex-flow: row wrap;
 }
+
+.board__title{
+  flex: 1 1 auto;
+}
+
+.board__list{
+  order: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 auto;
+  gap: var(--spacing-sm);
+}
+
+.board__item{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.board__link{
+}
+
+.board__date{
+  flex: 0 0 auto;
+}
+
+.board__more{
+  /* position: absolute;
+  top: 20px;
+  right: 10px; */
+  padding-top: var(--spacing-sm);
+}
+
 
 /* 공통 인기 사이트 */
 .favorite {
