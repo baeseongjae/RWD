@@ -427,8 +427,48 @@ input[type="search"] {
     font-size: var(--text-sm);
     margin-left: var(--spacing-xs);
   }
+}
+
+/* 테블릿 디바이스 */
+@media (min-width: 640px) and (max-width: 768px){
+  /* 테블릿 메인 콘텐츠 */
+  .appMain{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "news news"
+      "board favorite"
+      "twitter book"
+      ". book";
+  }
+
+  /* 테블릿 추천 서적 */
+  .book{
+    
+  }
+
+  /* 테블릿 새소식 */
+  .news{
+    
+  }
+
+  /* 테블릿 게시판 */
+  .board{
+
+  }
+
+  /* 테블릿 인기사이트 */
+  .favorite{
+
+  }
+
+  /* 테블릿 트위터 */
+  .twitter{
+
+  }
 
 }
+
 
 /* 데스크탑 디바이스 (Desktop Device) */
 @media (min-width: 769px) {
@@ -498,9 +538,6 @@ input[type="search"] {
     "book book book book . board board board board board board board";;
   }
 }
-
-
-
 
 /* 고해상도 배경이미지 미디어쿼리 */
 @media (-webkit-min-device-pixel-ratio: 2),
